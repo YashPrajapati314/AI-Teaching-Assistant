@@ -1,10 +1,14 @@
 import json
+import networkx as nx
+import matplotlib.pyplot as plt
 from typing import Literal
+import pandas as pd
 
 def create_transition_graph(filename: str = 'final_updated_classification.json', role: Literal['Student', 'Teacher', 'Both'] = 'Both'):
     with open(filename, 'r') as f:
         data = json.load(f)
-    
+
+    # Define state positions based on role
     if role == 'Teacher':
         state_positions = {
             'Topic Open': 0,
@@ -32,16 +36,72 @@ def create_transition_graph(filename: str = 'final_updated_classification.json',
         state_positions = {
             
         }
+
+    reversed_state_positions = {value: key for key, value in state_positions.items()}
+    no_of_states = len(state_positions)
+    graph = [[0 for _ in range(no_of_states)] for _ in range(no_of_states)]
     
     messages = []
-    
-    for object in data:
-        if object != None:
+
+    for obj in data:
+        if obj:
             if role == 'Both':
-                message_states = [state_positions[state] for state in object['states']]
+                message_states = [state_positions[state] for state in obj['states']]
                 messages.append(message_states)
-            elif object['responder'] == role:
+            elif obj['responder'] == role:
+                message_states = [state_positions[state] for state in obj['states']]
                 messages.append(message_states)
+
+    for m in range(len(messages) - 1):
+        prev_states = messages[m]
+        next_states = messages[m+1]
+        for i in prev_states:
+            for j in next_states:
+                graph[i][j] += 1
+
+    # --- Visualize with NetworkX ---
+    G = nx.DiGraph()
+
+    for idx, name in reversed_state_positions.items():
+        G.add_node(name)
+
+    for i in range(no_of_states):
+        for j in range(no_of_states):
+            if graph[i][j] > 0:
+                from_state = reversed_state_positions[i]
+                to_state = reversed_state_positions[j]
+                G.add_edge(from_state, to_state, weight=graph[i][j])
+
+    pos = nx.spring_layout(G, seed=20, k=0.5)  # Layout for consistent positioning
+    edge_labels = nx.get_edge_attributes(G, 'weight')
+
+    plt.figure(figsize=(200, 200))
+    nx.draw(G, pos, with_labels=True, node_size=1000, node_color="lightblue", font_size=10, arrows=True)
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8)
+    plt.title(f"{role} State Transition Graph", fontsize=14)
+    # plt.tight_layout()
+    # plt.show()
     
-    for i in range(len(messages) - 1):
-        pass
+    return state_positions, reversed_state_positions, graph
+
+def create_table(role: Literal['Student', 'Teacher', 'Both'] = 'Both'):
+    state_positions, reversed_state_positions, graph = create_transition_graph(role=role)
+    columns = ['Previous State']
+    columns.extend(list(state_positions.keys()))
+    data = []
+    for i, graph_row in enumerate(graph):
+        row = [reversed_state_positions[i]]
+        row.extend(graph_row)
+        data.append(row)
+        
+    df = pd.DataFrame(columns=columns, data=data)
+        
+    print(df)
+    
+    if role == 'Both':
+        df.to_csv(f'Student Teacher State Transition', index=False)
+    else:
+        df.to_csv(f'{role} State Transition.csv', index=False)
+    
+create_table('Teacher')
+
