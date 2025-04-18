@@ -1,0 +1,1337 @@
+[
+    {
+        "message": "Hello teacher",
+        "responder": "Student",
+        "states": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "Hello student, how are you? How may I help you today?",
+        "responder": "Teacher",
+        "states": [
+            "Connect",
+            "Topic Ask"
+        ]
+    },
+    {
+        "message": "Okay so I am soon going to enter college, and I am going to be learning computer science... I am very excited to begin this journey, and I wish to start learning C programming. Can you please help me out with it? Learning C in a very elegant way, that no one has ever done before?",
+        "responder": "Student",
+        "states": [
+            "Request",
+            "Connect"
+        ]
+    },
+    {
+        "message": "Oh wow, congratulations and good luck for your journey. Let us embark on this journey to learning C. Do you know some C, or any kind of programming language beforehand, or do you wanna start from the complete basics and scratch?",
+        "responder": "Teacher",
+        "states": [
+            "Topic Ask",
+            "Connect",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "I have no clue about programming, can you please walk me through in a way that's very intuitive and like an amazing enjoyable journey of exploration instead of a boring lecture.",
+        "responder": "Student",
+        "states": [
+            "Open Response",
+            "Unaware",
+            "Request"
+        ]
+    },
+    {
+        "message": "Sure! Let's get started! Okay, so did you know, all of the technological advancements in the world of computer science that you see today, from the operating systems that make your computers function, to the internet, all sorts of databases, everything, are all possible only due to C.",
+        "responder": "Teacher",
+        "states": [
+            "Topic Open",
+            "Fact",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Wow, is that so?",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Yes! C is the mother of all programming languages, and programming is what makes everything in the realm of computer science possible. Programming is essentially telling a computer or a device what to do, and how to do it. It makes the computer function by allowing us to give them instructions. Now just like we use languages to communicate and understand each other, what language do you think a computer understands?",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Importance",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "A programming language...? Like C?",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "You're on the right path! But if you think about it closely, computers are nothing more than a bunch of circuits and logic gates.",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Oh! I remember learning something about gates, but I didn't exactly understand it and thus don't remember what exactly do they mean. I'm sorry.",
+        "responder": "Student",
+        "states": [
+            "Unaware",
+            "Connect"
+        ]
+    },
+    {
+        "message": "Oh, no problem! I will teach you about gates in a really interesting and intuitive manner. Okay so have you heard about transistors?",
+        "responder": "Teacher",
+        "states": [
+            "Branch",
+            "Connect",
+            "Topic Ask",
+            "Answer Respond"
+        ]
+    },
+    {
+        "message": "Oh yes! I remember learning about them in physics class, they are made of semiconductors which allow the current to flow in only a particular direction.",
+        "responder": "Student",
+        "states": [
+            "Aware"
+        ]
+    },
+    {
+        "message": "Yes! That's right, using these transistors, we can build something called as logic gates. So now what exactly are these gates? In a way, you can say that these gates are a way of mapping fundamental mathematical logic into reality. Suppose I give you a statement: I am eating an ice-cream and am happy. Can you see how this sentence consists of two statements: 1) I am eating an ice-cream. 2) I am happy.",
+        "responder": "Teacher",
+        "states": [
+            "Importance",
+            "Short Explanation",
+            "Example",
+            "Answer Respond"
+        ]
+    },
+    {
+        "message": "Yes...",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "The 'and' here is a conjunction that joins the two sentences. It's like saying \"I am eating an ice-cream\" AND \"I am happy\". Now, thinking simply from the perspective of human language, what do you think 'and' means here?",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Example",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "I didn't quite get you. And is simply used to join the two clauses here, to combine the two statements into one.",
+        "responder": "Student",
+        "states": [
+            "Unclear",
+            "Misunderstood"
+        ]
+    },
+    {
+        "message": "Yes but factually speaking, what does 'and' suggest here? Like if 'and' is connecting two statements p and q, does that mean p is true and q is untrue?",
+        "responder": "Teacher",
+        "states": [
+            "Clarification",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "No, it means both the statements are true.",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Exactly! As a logical operator, AND tries to mean that both the statements are true, now suppose I tell you \"I am eating an ice-cream and am happy\", but the actual truth is although I am eating an ice cream, I am sad, is my original statement true?",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Short Explanation",
+            "Example",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "It's partially true.",
+        "responder": "Student",
+        "states": [
+            "Answer",
+            "Misunderstood"
+        ]
+    },
+    {
+        "message": "Yes but what does 'and' say, for a statement 'p and q' to be true, both p and q must be true. So am I speaking the truth if p is true and q isn't?",
+        "responder": "Teacher",
+        "states": [
+            "Clarification",
+            "Answer Respond",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "No",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Correct! Similar to this there's the OR logical conjunction. Now the OR in logic tends to work kinda differently from how we use it in English. If I say \"I will have tea or coffee\", what does that mean?",
+        "responder": "Teacher",
+        "states": [
+            "Example",
+            "Short Explanation",
+            "Answer Respond"
+        ]
+    },
+    {
+        "message": "That means you would either like to have tea or coffee. Right?",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Yes! But that is the case in English, where we tend to related 'or' with 'either or', in logic when we say the statement 'p or q' is true, that means either p is true (and q is false), or either q is true (and p is false), or both p and q are true!",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "What? That doesn't make sense to me...",
+        "responder": "Student",
+        "states": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Okay think of the AND example, if we said 'p and q' is true, both p and q had to be true individually.",
+        "responder": "Teacher",
+        "states": [
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Yes, that's right.",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "Similarly, in the case of OR, if you say 'p or q' is true, then in this case, it is not necessary for both p and q to be true. Even if only p is true, the entire statement 'p or q' will be true.",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Ohh, so only one of them needs to be true...",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "Yes! But even if both of them are true, there's no issue, the statement 'p or q' will be false only when both p and q are false. In any other possible combination, even when both of them are true, 'p or q' will be true. So when I \"logically\" say \"I will have tea or coffee\", that means I will either have tea, or have coffee, but I am also fine with having both of them!",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation",
+            "Clarification",
+            "Example"
+        ]
+    },
+    {
+        "message": "Oh, I get it now. But what if we want a condition that only one of them can be true, only then the conjunction of the statements will evaluate to true?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "That's a very good question! To do this, we use the XOR logical condition. Which we can build using other fundamental logical conditions. We should probably learn about it in the future later.",
+        "responder": "Teacher",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Oh that's interesting! So what are the fundamental logical conditions? AND and OR, that's all?",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "And there's one more, NOT. Can you guess what it does?",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "It simply negates the meaning of the original statement?",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Exactly! So if the statement p is 'I am happy', the statement 'not p' would mean 'I am not happy'. And if p is true, 'not p' would be false. Using just these three logical operators, AND, OR and NOT, you can make complex logical inferences and build intricate conditional paths working with Boolean algebra. The logic gates are basically components that would apply this on a circuit. In a digital system, you can make everything be communicated through either high/existent current or low/non-existent current, where high current would mean true or a positive value, and accordingly low means false or a negative value.",
+        "responder": "Teacher",
+        "states": [
+            "Importance",
+            "Answer Respond",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Oh yeah! This is binary, the language of computers!",
+        "responder": "Student",
+        "states": [
+            "Understood",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Exactly, computers only \"understand\", the flow of electricity, which can be orchestrated to be either high or low. The benefit of using electric current is that it is extremely fast, we are simply using the laws of physics to talk to our computers and communicate them at insane speeds! Logic gates are the bridge between physics and computer science, more precisely engineering, that helps us design computer that can perform tasks very accurately, efficiently, and quickly. We can also represent numbers in binary helping us to perform calculations on them really fast. Say we have an AND gate with two inputs and one output. If at one of it input points we send high current, and at the other we send low, what do you think will be the output?",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation",
+            "Question Ask",
+            "Importance"
+        ]
+    },
+    {
+        "message": "I think it will be low because logically, AND only gives true or high when both of its inputs are high. Here one of them is low, so it gives a low signal as the output.",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Perfect! So all of computer science comes down to the flow of electricity and designing circuits. Now as we just learnt, binary is the language computers fundamentally understand and work with, so in order to instruct them or interact with them, we will also have to learn binary. Don't you think it would be confusing to work with strings of 1s and 0s? 101101010111",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Yeah that's right, it wouldn't be possible at all probably keeping in track what every combination means, and how to manually convey it to the hardware.",
+        "responder": "Student",
+        "states": [
+            "Understood",
+            "Agree"
+        ]
+    },
+    {
+        "message": "Right! Which is where programming languages come to the rescue. Learning them, you can talk with computers using phrases that are very easily understandable by humans. The program that is written by us then gets converted into binary, which tells the computer how it should work, and this is what makes the world go round!",
+        "responder": "Teacher",
+        "states": [
+            "Clarification",
+            "Short Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Ohhhh, that's so interesting!",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Isn't it! Now there are several programming languages, from C and C++, to Python, Java, C#, Ruby, etc. each of them used in various different scenarios, where they might be the most useful or best to use. But regardless of the language you are using, most of what is out there, C is the source of all of them. From programming languages, to the softwares made through them, all of them have been made possible because of C. Don't you think that makes C a really beautiful language?",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "It does! I am so excited to learn it!",
+        "responder": "Student",
+        "states": [
+            "Agree",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Alright then! Let's get started! Okay so the very first thing, what do you think is one of the most fundamental things a program could do?",
+        "responder": "Teacher",
+        "states": [
+            "Topic Open",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "I am not sure.",
+        "responder": "Student",
+        "states": [
+            "Unaware"
+        ]
+    },
+    {
+        "message": "Try to think, it's something along the lines of communicating with a computer we have been talking about all the while. How does a computer communicate with us?",
+        "responder": "Teacher",
+        "states": [
+            "Clarification",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Input devices, Output devices, getting some hints...",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Exactly! Most of the output we receive from a computer is from its screen, and today we have amazing graphical user interfaces. But they are all built through the printing of shapes, colours, and more advanced graphics onto the screen. One of the most basic things a computer could do is \"tell\" us about something through the monitor. And what is a more fundamental way of conveying something than using text. We need to somehow tell our computer that we want it to tell us something, by writing onto the screen. If there was an instruction that would tell computers to do this, what would you name it?",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "Uhm... Write?",
+        "responder": "Student",
+        "states": [
+            "Open Response"
+        ]
+    },
+    {
+        "message": "Great choice! The creators of C decided to name such an instruction printf. This command would be used to make the computer print something onto the screen, it's actually more of a function but we will talk more about that later.",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Oh I see.",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh by the way, C was invented by Dennis Ritchie at Bell Laboratories in 1972. Do you know what the C in the C Programming Language stands for?",
+        "responder": "Teacher",
+        "states": [
+            "Fact",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Computer?",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "No haha, it doesn't stand for anything. It was named C as it was introduced as an improvement to the B programming language.",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Fact"
+        ]
+    },
+    {
+        "message": "Wow, that's an interesting fact, now did the B programming language originate from the A programming language?",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "No, the B there stands for Basic.",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Fact"
+        ]
+    },
+    {
+        "message": "LOL, that was unexpected.",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Haha, yes. So printf is the \"command\" we use for printing something onto the screen. Now how do we exactly use it? So just like there are grammar rules in languages to prevent ambiguity and make things understandable by everyone, there's a particular syntax we need to follow so that the computer is able to understand it.",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Yes, I agree, and probably the syntax or rules are even stricter here because a computer needs a very specific structure of instructions to understand us.",
+        "responder": "Student",
+        "states": [
+            "Agree",
+            "Other"
+        ]
+    },
+    {
+        "message": "Exactly! So in order to get something printed onto the screen, we write printf on the console first, then we open a bracket '('. This means the printf command or function is going to accept whatever is going to fall under these parentheses. You can try following along.",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Oh okay, yes, next?",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "Now we give it a string that you would like to get printed on to the screen, a string is basically a chain of any kind of characters, like letters, numbers, symbols, etc. Usually new programmers learning a language print \"Hello World!\" as their first text and run it as their first program. What would you like to print?",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "Oh, um, I can't think of anything... Okay let's just print \"Hiii\".",
+        "responder": "Student",
+        "states": [
+            "Open Response"
+        ]
+    },
+    {
+        "message": "Alright, so, so far we have written printf(, now we need to send in the string \"Hiii\" so strings like this in C or most other programming languages are always sent enclosed in double inverted commas, like this \"Hiii\".",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Oh, ok.",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "And we add this to our command printf(\"Hiii\", now we are done telling the command what we want printed, we close the parentheses, making it printf(\"Hiii\").",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Oh I see...",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "And just like we add a full stop to indicate the end of a sentence, here we add a semi colon at the end of every statement, so it become printf(\"Hiii\");",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Example"
+        ]
+    },
+    {
+        "message": "Oh, that looks kinda weird.",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional",
+            "Other"
+        ]
+    },
+    {
+        "message": "I understand it can look slightly weird in the beginning, but it was chosen because a semicolon isn't used for anything else, and is also easier to reach with the finger.",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Oh that makes sense, it also kinda gives a programmatic feel to what we are writing.",
+        "responder": "Student",
+        "states": [
+            "Agree"
+        ]
+    },
+    {
+        "message": "Haha yes, now let us run this program. Oh okay so let me tell you what happens, after this. When we are done writing a program, we can execute it to see how the computer understands our instructions and responds to it. The compiler reads the program, checks for any errors, and converts it into machine code. This code further gets converted into binary as we discussed, and then it gets run, so for now, try running the program and see what happens.",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Oh, it does not run, and shows some sort of errors.",
+        "responder": "Student",
+        "states": [
+            "Other"
+        ]
+    },
+    {
+        "message": "Perfect! So do you know why the errors are occurring despite writing everything correctly, it's because the program doesn't know what we want it to execute.",
+        "responder": "Teacher",
+        "states": [
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Oh, how do we tell it then?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "If you read the error message, you'll realize the compiler must be asking for something like the main function.",
+        "responder": "Teacher",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Yes, what's that?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "So the main function is basically a block of code inside which, whatever you write gets executed. It is the main part of the program, and only the code written inside it gets executed. A C program cannot run without the main function, because there's nothing for the program to run, it only executes what is written inside the main function.",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Oh I see, so how exactly do we write this main function?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "You write main first, then add an open and closing parentheses after it, like this main()",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Nothing goes inside these parentheses?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "Good question! You see the main function is also a function like the printf function, in the case of printf we were sending in something to write, here we don't need to for now, at least in this case. Also here we are just defining a function, not calling it to use it like we called printf, I'll explain the details of what these jargons mean eventually but for now I hope you get how we wrote main(), now add opening and closing curly braces after it.",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Detailed Explanation",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Oh, like this? main(){}",
+        "responder": "Student",
+        "states": [
+            "Answer",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "Yes perfect! Now whatever you write inside the curly braces gets executed, since this is the definition of the main function that we are writing here, the way we are describing to the computer what we want to be executed. So how will you ensure printf(\"Hiii!\"); gets executed here?",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Oh, so I think I should write main(){printf(\"Hiii!\");}? This looks so messy.",
+        "responder": "Student",
+        "states": [
+            "Answer",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Yes perfect! Don't worry about the messiness we can format it like this to make it look beautiful\nmain()\n{\n\tprintf(\"Hiii!\");\n}",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Oh, looks much better, now let me try to run this.",
+        "responder": "Student",
+        "states": [
+            "Other"
+        ]
+    },
+    {
+        "message": "Sure, go ahead...",
+        "responder": "Teacher",
+        "states": [
+            "Other"
+        ]
+    },
+    {
+        "message": "Oh, it's still not running, shows errors again.",
+        "responder": "Student",
+        "states": [
+            "Other"
+        ]
+    },
+    {
+        "message": "Yes, right again! So you see I have been talking about functions for so long, what exactly are they? Well they are pieces of instructions that do something for us. Just like the printf function takes in a string and prints it to the console for us. Now just like how in math, a function takes in a value (or maybe multiple) and gives out some other value, the same way a function takes in some parameters in its parentheses, and gives out a value through a return statement. For example, if there was a function to add two numbers, it would take in two numbers as the input, say a and b, and return an output, a+b. Do you know what integers are?",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation",
+            "Open Ask",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Yes, whole numbers? Also the negative ones, non fractional?",
+        "responder": "Student",
+        "states": [
+            "Open Response",
+            "Answer"
+        ]
+    },
+    {
+        "message": "Yes! So C has data types for storing different types of data, the add function that we described above would take in two integers, add them and return an integer value. The important part here is about returning the value, since some functions would do something and along with that give something out to us, we need an option to define what kind of data the function is returning. Can you tell me after adding two integers (you can call them numbers if is integers is too heavy), what kind of data would we expect the function to return back to us?",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Umm, I am confused, like I understood most of the part but I don't get the returning part.",
+        "responder": "Student",
+        "states": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Suppose I give you two numbers, 3 and 5, imagine you are the function add who is going to add those two numbers, what will you return me?",
+        "responder": "Teacher",
+        "states": [
+            "Clarification",
+            "Example",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "The number 8",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Exactly, and what kind of data is the value 8?",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "It's a number.",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Perfect, so this function that we were talking about, returns a data of the type number, more specifically an integer. In C and many other programming languages, integers are represented using the keyword int. Now how do we tell the program that it is supposed to return a data of the type integer? So here's how we do it, while describing the function, we write the name of the data type just before the name of the function. So can you tell me how we would do it?",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "integer add()?",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Almost there, what term do we use to describe an integer in C?",
+        "responder": "Teacher",
+        "states": [
+            "Clarification",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Oh int add()",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Perfect! You are really good at catching up! To be more precise it should be something like int add(int a, int b), since it is taking in two numbers as its parameters as well, but don't worry about it much. With this syntax in mind \"return_type function_name()\", can you see what is the problem with the way we are currently writing the main function?",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Connect",
+            "Short Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Oh it doesn't have a return type!",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Exactly, and in order to properly describe a function, we need to specify a return type. Now a question to you, do you think the main function needs to return a value?",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "I don't know, who will it return the value to?",
+        "responder": "Student",
+        "states": [
+            "Open Response",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "Perfect question! Brilliant! The thing is when we used a function like add, it returned the value that we are going to use somewhere, but the main function itself is the main part of the program that is running, where would it return the value, why does it even need to? I really loved that you asked that question.",
+        "responder": "Teacher",
+        "states": [
+            "Connect",
+            "Answer"
+        ]
+    },
+    {
+        "message": "Thank you haha, it was a question that genuinely came to my mind. So what do we do now that we don't want it to return a value.",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "Oh, we use the void data type! You know what a void is in space?",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "A vast region of emptiness?",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Yes! The same way, void in C means nothing",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond"
+        ]
+    },
+    {
+        "message": "Oh",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "Yes, so when you define the return type of a function as void it means it doesn't return any value.",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Oh that's great!",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "So can you help me and rewrite the entire thing with the change we made",
+        "responder": "Teacher",
+        "states": [
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Okay so it should be something like this\nvoid main()\n{\n\tprintf(\"Hiii!\");\n}",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Perfect! Now before you run this, let me tell you one thing. And here's the main plot twist. The main function should infact return a value!",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Oh is that so, but why? And where does it go?",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "The main function returns its value to the operating system, and why does it do so? Well, it does so to ensure that the program has executed successfully... Think of it like this, the program is executing fine, after it is done executing, it returns a standard conventional value to the operating system that suggests and means the program ran successfully without any errors, if the program did encounter any issues while executing, the value might change.",
+        "responder": "Teacher",
+        "states": [
+            "Detailed Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Oh",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "It's not that void main() won't work, it would work, but this is not a standard C practice, and following the convention to return the standard value is always better.",
+        "responder": "Teacher",
+        "states": [
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Oh. So what is this standard value?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "It's 0! If there are no errors, the program ie the main function would return the value 0 to the system, a non zero value would suggest the program ran into errors.",
+        "responder": "Teacher",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Oh I see",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "Now can you rewrite the block of main function so that our program is able to return 0?",
+        "responder": "Teacher",
+        "states": [
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "I don't know how to return values though",
+        "responder": "Student",
+        "states": [
+            "Unaware"
+        ]
+    },
+    {
+        "message": "Oh sorry I forgot to tell you. You write the keyword return and after that you write the value that you wish to return. \nreturn value;\nLike this.",
+        "responder": "Teacher",
+        "states": [
+            "Connect",
+            "Clarification",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Okay, do I need to enclose the 0 in quotation marks?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "Very good question! You shouldn't because that would make \"0\" a string, whereas we wanna return the numerical value 0, not a string of text.",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Okay, lemme try...\nvoid main()\n{\n\tprintf(\"Hiii!\");\n\treturn 0\n}",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Unfortunately your function won't be able to return 0, can you see why?",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Why?",
+        "responder": "Student",
+        "states": [
+            "Answer",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "What type of data are you returning from the function?",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Oh it says void, I need to change it to int",
+        "responder": "Student",
+        "states": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Perfect!",
+        "responder": "Teacher",
+        "states": [
+            "Connect",
+            "Answer Respond"
+        ]
+    },
+    {
+        "message": "int main()\n{\n\tprintf(\"Hiii!\");\n\treturn 0\n}",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Nice! And what do you end at the end of each and every statement?",
+        "responder": "Teacher",
+        "states": [
+            "Answer Respond",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Oh yes I almost forgot!\nint main()\n{\n\tprintf(\"Hiii!\");\n\treturn 0;\n}\nDo we need to add a semi-colon at the end too, after the curly bracket closes?",
+        "responder": "Student",
+        "states": [
+            "Answer",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "No no, that's the end of the function. The description of the function lies inside those curly braces, and you don't put a semi-colon after the function's body.",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Okay, so now I guess this should run...",
+        "responder": "Student",
+        "states": [
+            "Understood"
+        ]
+    },
+    {
+        "message": "Try running it!",
+        "responder": "Teacher",
+        "states": [
+            "Other"
+        ]
+    },
+    {
+        "message": "Oh, it still doesn't work, it says something like printf is undefined... Idk what this means we have tried and fixed everything, why is this still not working?",
+        "responder": "Student",
+        "states": [
+            "Other",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Ah, sorry if I made it too long. Now basically, we know that we expect the program to print our text on the screen through the printf function, but how does the program know what to do?",
+        "responder": "Teacher",
+        "states": [
+            "Connect",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Oh, what does that mean?",
+        "responder": "Student",
+        "states": [
+            "Unclear",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "What I am trying to say is even though something like printing something to the screen seems trivial to us, a computer doesn't actually know how to do that unless you describe all the complicated set of procedures and operations it will have to perform deeply inside, just to be able to print something.",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Short Explanation",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "What? Is that so?",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Yes, as we talked before, every operation simplifies down to a set of something very simple and fundamental, and for now, our program does not know what exactly it should do to be able to print something on the screen. There's a lot of complexity that goes behind it, from communicating to the operating system, other processes, making buffers.",
+        "responder": "Teacher",
+        "states": [
+            "Short Explanation"
+	]
+    },
+    {
+        "message": "Wow, that's interesting, but this looks really complicated... I don't think programming is for me, I don't think I will be able to describe functions so precisely from scratch, dealing with 1s and 0s. I'm sorry you teach really well, but it's too difficult for me I guess.",
+        "responder": "Student",
+        "states": [
+            "Other",
+            "Connect",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Oh don't lose hope! Here's the bright part now, programmers have already programmed a lot of functions for us, all pre-defined, so that we can use them as per our choice, without having to sit and redefine them.",
+        "responder": "Teacher",
+        "states": [
+            "Other",
+            "Connect",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Oh, so there is one for printf function?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "Not just printf but thousands of other such functions! And this is just C, if you go for higher level languages like Python, the syntax is even simpler and there's a higher level of modularity and a lot more functions that make your task a whole lot easier!",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "That sounds so much fun! So where exactly is this printf function defined?",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "Oh, it's defined in a file called as stdio.h",
+        "responder": "Teacher",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Oh, how do we access it and connect it to our printf function and make our program work?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "You simply write #include <stdio.h> in the beginning of the program",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Outside the main function?",
+        "responder": "Student",
+        "states": [
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "Yes #include is a preprocessor directive, which means it executes before the running of the program, it includes functions from the file stdio.h that is written by programmers and contains the necessary functionality to be able to give input to and read output from a computer. It stands for standard input output. #include <stdio.h> would insert all the contents of the files stdio.h into our file, which includes functions like printf, making them ready to be used!",
+        "responder": "Teacher",
+        "states": [
+            "Answer",
+            "Detailed Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "#include <stdio.h>\nint main()\n{\n\tprintf(\"Hiii!\");\n\treturn 0;\n}",
+        "responder": "Student",
+        "states": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Perfect, try running it now!",
+        "responder": "Teacher",
+        "states": [
+            "Other"
+        ]
+    },
+    {
+        "message": "It works! I can see Hiii written on the output screen! Wow this is amazing!!!",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Wow that's awesome!!! I'm sorry if I stretched teaching about just printing something to the screen too long...",
+        "responder": "Teacher",
+        "states": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "No, I really loved your style of teaching, it made me explore things myself and was so much more enjoyable rather than a tutorial that would paste the standard Hello World program in front of me and simply ask me to run it first.",
+        "responder": "Student",
+        "states": [
+            "Connect",
+            "Learn Emotional",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Really, I am so glad you enjoyed it!",
+        "responder": "Teacher",
+        "states": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "It was so much fun, you are such a great teacher!",
+        "responder": "Student",
+        "states": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "Aww, thank you so much! I think we discussed a lot today so let's move on the next conversation to some time later... In the mean time, can you guess what would the function used for taking inputs from the user be called?",
+        "responder": "Teacher",
+        "states": [
+            "Connect",
+            "Other",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "Yes you are right. Oh and I would have guessed the function's name to be read, but now that there's the o/p function named printf, let me think... So a printer is used for o/p, and it's analogous device used for i/p is a scanner, so is the input function named scanf by any chance?",
+        "responder": "Student",
+        "states": [
+            "Answer",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "What a crazy analogy! You are right! Also the f in printf and scanf stands for format...",
+        "responder": "Teacher",
+        "states": [
+            "Connect",
+            "Answer Respond",
+            "Fact"
+        ]
+    },
+    {
+        "message": "Wow, that was unexpected!",
+        "responder": "Student",
+        "states": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Yes haha, anyways I think we had a great time learning, thank you for being such a patient and enthusiastic student. We'll meet again soon.",
+        "responder": "Teacher",
+        "states": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "Thank you and see you soon! Have a nice day!",
+        "responder": "Student",
+        "states": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "Goodbye! Have a great time!",
+        "responder": "Teacher",
+        "states": [
+            "Connect"
+        ]
+    }
+]

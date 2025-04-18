@@ -1,0 +1,607 @@
+[
+    {
+        "message": "Hello student, how are you? How may I help you today?",
+        "categories": [
+            "Connect",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "Oh wow, congratulations and good luck for your journey. Let us embark on this journey to learning C. Do you know some C, or any kind of programming language beforehand, or do you wanna start from the complete basics and scratch?",
+        "categories": [
+            "Connect",
+            "Open Ask",
+            "Topic Ask"
+        ]
+    },
+    {
+        "message": "Sure! Let's get started! Okay, so did you know, all of the technological advancements in the world of computer science that you see today, from the operating systems that make your computers function, to the internet, all sorts of databases, everything, are all possible only due to C.",
+        "categories": [
+            "Short Explanation",
+            "Fact"
+        ]
+    },
+    {
+        "message": "Yes! C is the mother of all programming languages, and programming is what makes everything in the realm of computer science possible. Programming is essentially telling a computer or a device what to do, and how to do it. It makes the computer function by allowing us to give them instructions. Now just like we use languages to communicate and understand each other, what language do you think a computer understands?",
+        "categories": [
+            "Importance",
+            "Detailed Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "You're on the right path! But if you think about it closely, computers are nothing more than a bunch of circuits and logic gates.",
+        "categories": [
+            "Answer Respond",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Oh, no problem! I will teach you about gates in a really interesting and intuitive manner. Okay so have you heard about transistors?",
+        "categories": [
+            "Connect",
+            "Topic Open",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Yes! That's right, using these transistors, we can build something called as logic gates. So now what exactly are these gates? In a way, you can say that these gates are a way of mapping fundamental mathematical logic into reality. Suppose I give you a statement: I am eating an ice-cream and am happy. Can you see how this sentence consists of two statements: 1) I am eating an ice-cream. 2) I am happy.",
+        "categories": [
+            "Answer Respond",
+            "Detailed Explanation",
+            "Example"
+        ]
+    },
+    {
+        "message": "The 'and' here is a conjunction that joins the two sentences. It's like saying \"I am eating an ice-cream\" AND \"I am happy\". Now, thinking simply from the perspective of human language, what do you think 'and' means here?",
+        "categories": [
+            "Short Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Yes but factually speaking, what does 'and' suggest here? Like if 'and' is connecting two statements p and q, does that mean p is true and q is untrue?",
+        "categories": [
+            "Answer Respond",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Exactly! As a logical operator, AND tries to mean that both the statements are true, now suppose I tell you \"I am eating an ice-cream and am happy\", but the actual truth is although I am eating an ice cream, I am sad, is my original statement true?",
+        "categories": [
+            "Answer Respond",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Yes but what does 'and' say, for a statement 'p and q' to be true, both p and q must be true. So am I speaking the truth if p is true and q isn't?",
+        "categories": [
+            "Answer Respond",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Correct! Similar to this there's the OR logical conjunction. Now the OR in logic tends to work kinda differently from how we use it in English. If I say \"I will have tea or coffee\", what does that mean?",
+        "categories": [
+            "Answer Respond",
+            "Question Ask",
+            "Topic Open"
+        ]
+    },
+    {
+        "message": "Yes! But that is the case in English, where we tend to related 'or' with 'either or', in logic when we say the statement 'p or q' is true, that means either p is true (and q is false), or either q is true (and p is false), or both p and q are true!",
+        "categories": [
+            "Answer Respond",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Okay think of the AND example, if we said 'p and q' is true, both p and q had to be true individually.",
+        "categories": [
+            "Clarification",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Similarly, in the case of OR, if you say 'p or q' is true, then in this case, it is not necessary for both p and q to be true. Even if only p is true, the entire statement 'p or q' will be true.",
+        "categories": [
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Yes! But even if both of them are true, there's no issue, the statement 'p or q' will be false only when both p and q are false. In any other possible combination, even when both of them are true, 'p or q' will be true. So when I \"logically\" say \"I will have tea or coffee\", that means I will either have tea, or have coffee, but I am also fine with having both of them!",
+        "categories": [
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "That's a very good question! To do this, we use the XOR logical condition. Which we can build using other fundamental logical conditions. We should probably learn about it in the future later.",
+        "categories": [
+            "Importance",
+            "Topic Open"
+        ]
+    },
+    {
+        "message": "And there's one more, NOT. Can you guess what it does?",
+        "categories": [
+            "Topic Open",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Exactly! So if the statement p is 'I am happy', the statement 'not p' would mean 'I am not happy'. And if p is true, 'not p' would be false. Using just these three logical operators, AND, OR and NOT, you can make complex logical inferences and build intricate conditional paths working with Boolean algebra. The logic gates are basically components that would apply this on a circuit. In a digital system, you can make everything be communicated through either high/existent current or low/non-existent current, where high current would mean true or a positive value, and accordingly low means false or a negative value.",
+        "categories": [
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Exactly, computers only \"understand\", the flow of electricity, which can be orchestrated to be either high or low. The benefit of using electric current is that it is extremely fast, we are simply using the laws of physics to talk to our computers and communicate them at insane speeds! Logic gates are the bridge between physics and computer science, more precisely engineering, that helps us design computer that can perform tasks very accurately, efficiently, and quickly. We can also represent numbers in binary helping us to perform calculations on them really fast. Say we have an AND gate with two inputs and one output. If at one of it input points we send high current, and at the other we send low, what do you think will be the output?",
+        "categories": [
+            "Detailed Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Perfect! So all of computer science comes down to the flow of electricity and designing circuits. Now as we just learnt, binary is the language computers fundamentally understand and work with, so in order to instruct them or interact with them, we will also have to learn binary. Don't you think it would be confusing to work with strings of 1s and 0s? 101101010111",
+        "categories": [
+            "Importance",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "Right! Which is where programming languages come to the rescue. Learning them, you can talk with computers using phrases that are very easily understandable by humans. The program that is written by us then gets converted into binary, which tells the computer how it should work, and this is what makes the world go round!",
+        "categories": [
+            "Importance",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Isn't it! Now there are several programming languages, from C and C++, to Python, Java, C#, Ruby, etc. each of them used in various different scenarios, where they might be the most useful or best to use. But regardless of the language you are using, most of what is out there, C is the source of all of them. From programming languages, to the softwares made through them, all of them have been made possible because of C. Don't you think that makes C a really beautiful language?",
+        "categories": [
+            "Importance",
+            "Open Ask"
+        ]
+    },
+    {
+        "message": "Alright then! Let's get started! Okay so the very first thing, what do you think is one of the most fundamental things a program could do?",
+        "categories": [
+            "Topic Open",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Try to think, it's something along the lines of communicating with a computer we have been talking about all the while. How does a computer communicate with us?",
+        "categories": [
+            "Question Ask",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Exactly! Most of the output we receive from a computer is from its screen, and today we have amazing graphical user interfaces. But they are all built through the printing of shapes, colours, and more advanced graphics onto the screen. One of the most basic things a computer could do is \"tell\" us about something through the monitor. And what is a more fundamental way of conveying something than using text. We need to somehow tell our computer that we want it to tell us something, by writing onto the screen. If there was an instruction that would tell computers to do this, what would you name it?",
+        "categories": [
+            "Importance",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Great choice! The creators of C decided to name such an instruction printf. This command would be used to make the computer print something onto the screen, it's actually more of a function but we will talk more about that later.",
+        "categories": [
+            "Answer",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Oh by the way, C was invented by Dennis Ritchie at Bell Laboratories in 1972. Do you know what the C in the C Programming Language stands for?",
+        "categories": [
+            "Fact",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "No haha, it doesn't stand for anything. It was named C as it was introduced as an improvement to the B programming language.",
+        "categories": [
+            "Answer",
+            "Fact"
+        ]
+    },
+    {
+        "message": "No, the B there stands for Basic.",
+        "categories": [
+            "Answer",
+            "Fact"
+        ]
+    },
+    {
+        "message": "Haha, yes. So printf is the \"command\" we use for printing something onto the screen. Now how do we exactly use it? So just like there are grammar rules in languages to prevent ambiguity and make things understandable by everyone, there's a particular syntax we need to follow so that the computer is able to understand it.",
+        "categories": [
+            "Short Explanation",
+            "Importance",
+            "Topic Open"
+        ]
+    },
+    {
+        "message": "Exactly! So in order to get something printed onto the screen, we write printf on the console first, then we open a bracket '('. This means the printf command or function is going to accept whatever is going to fall under these parentheses. You can try following along.",
+        "categories": [
+            "Detailed Explanation",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Now we give it a string that you would like to get printed on to the screen, a string is basically a chain of any kind of characters, like letters, numbers, symbols, etc. Usually new programmers learning a language print \"Hello World!\" as their first text and run it as their first program. What would you like to print?",
+        "categories": [
+            "Short Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Alright, so, so far we have written printf(, now we need to send in the string \"Hiii\" so strings like this in C or most other programming languages are always sent enclosed in double inverted commas, like this \"Hiii\".",
+        "categories": [
+            "Short Explanation",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "And we add this to our command printf(\"Hiii\", now we are done telling the command what we want printed, we close the parentheses, making it printf(\"Hiii\").",
+        "categories": [
+            "Short Explanation",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "And just like we add a full stop to indicate the end of a sentence, here we add a semi colon at the end of every statement, so it become printf(\"Hiii\");",
+        "categories": [
+            "Short Explanation",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "I understand it can look slightly weird in the beginning, but it was chosen because a semicolon isn't used for anything else, and is also easier to reach with the finger.",
+        "categories": [
+            "Clarification",
+            "Fact"
+        ]
+    },
+    {
+        "message": "Haha yes, now let us run this program. Oh okay so let me tell you what happens, after this. When we are done writing a program, we can execute it to see how the computer understands our instructions and responds to it. The compiler reads the program, checks for any errors, and converts it into machine code. This code further gets converted into binary as we discussed, and then it gets run, so for now, try running the program and see what happens.",
+        "categories": [
+            "Detailed Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Perfect! So do you know why the errors are occurring despite writing everything correctly, it's because the program doesn't know what we want it to execute.",
+        "categories": [
+            "Answer",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "If you read the error message, you'll realize the compiler must be asking for something like the main function.",
+        "categories": [
+            "Answer",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "So the main function is basically a block of code inside which, whatever you write gets executed. It is the main part of the program, and only the code written inside it gets executed. A C program cannot run without the main function, because there's nothing for the program to run, it only executes what is written inside the main function.",
+        "categories": [
+            "Importance",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "You write main first, then add an open and closing parentheses after it, like this main()",
+        "categories": [
+            "Short Explanation",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Good question! You see the main function is also a function like the printf function, in the case of printf we were sending in something to write, here we don't need to for now, at least in this case. Also here we are just defining a function, not calling it to use it like we called printf, I'll explain the details of what these jargons mean eventually but for now I hope you get how we wrote main(), now add opening and closing curly braces after it.",
+        "categories": [
+            "Clarification",
+            "Short Explanation",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Yes perfect! Now whatever you write inside the curly braces gets executed, since this is the definition of the main function that we are writing here, the way we are describing to the computer what we want to be executed. So how will you ensure printf(\"Hiii!\"); gets executed here?",
+        "categories": [
+            "Short Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Yes perfect! Don't worry about the messiness we can format it like this to make it look beautiful\nmain()\n{\n\tprintf(\"Hiii!\");\n}",
+        "categories": [
+            "Answer",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Sure, go ahead...",
+        "categories": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "Yes, right again! So you see I have been talking about functions for so long, what exactly are they? Well they are pieces of instructions that do something for us. Just like the printf function takes in a string and prints it to the console for us. Now just like how in math, a function takes in a value (or maybe multiple) and gives out some other value, the same way a function takes in some parameters in its parentheses, and gives out a value through a return statement. For example, if there was a function to add two numbers, it would take in two numbers as the input, say a and b, and return an output, a+b. Do you know what integers are?",
+        "categories": [
+            "Detailed Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Yes! So C has data types for storing different types of data, the add function that we described above would take in two integers, add them and return an integer value. The important part here is about returning the value, since some functions would do something and along with that give something out to us, we need an option to define what kind of data the function is returning. Can you tell me after adding two integers (you can call them numbers if is integers is too heavy), what kind of data would we expect the function to return back to us?",
+        "categories": [
+            "Importance",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Suppose I give you two numbers, 3 and 5, imagine you are the function add who is going to add those two numbers, what will you return me?",
+        "categories": [
+            "Question Ask",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Exactly, and what kind of data is the value 8?",
+        "categories": [
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Perfect, so this function that we were talking about, returns a data of the type number, more specifically an integer. In C and many other programming languages, integers are represented using the keyword int. Now how do we tell the program that it is supposed to return a data of the type integer? So here's how we do it, while describing the function, we write the name of the data type just before the name of the function. So can you tell me how we would do it?",
+        "categories": [
+            "Importance",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Almost there, what term do we use to describe an integer in C?",
+        "categories": [
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Perfect! You are really good at catching up! To be more precise it should be something like int add(int a, int b), since it is taking in two numbers as its parameters as well, but don't worry about it much. With this syntax in mind \"return_type function_name()\", can you see what is the problem with the way we are currently writing the main function?",
+        "categories": [
+            "Importance",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Exactly, and in order to properly describe a function, we need to specify a return type. Now a question to you, do you think the main function needs to return a value?",
+        "categories": [
+            "Question Ask",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Perfect question! Brilliant! The thing is when we used a function like add, it returned the value that we are going to use somewhere, but the main function itself is the main part of the program that is running, where would it return the value, why does it even need to? I really loved that you asked that question.",
+        "categories": [
+            "Answer",
+            "Clarification",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Oh, we use the void data type! You know what a void is in space?",
+        "categories": [
+            "Short Explanation",
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Yes! The same way, void in C means nothing",
+        "categories": [
+            "Answer",
+            "Fact"
+        ]
+    },
+    {
+        "message": "Yes, so when you define the return type of a function as void it means it doesn't return any value.",
+        "categories": [
+            "Short Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "So can you help me and rewrite the entire thing with the change we made",
+        "categories": [
+            "Question Ask",
+            "Topic Open"
+        ]
+    },
+    {
+        "message": "Perfect! Now before you run this, let me tell you one thing. And here's the main plot twist. The main function should infact return a value!",
+        "categories": [
+            "Importance",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "The main function returns its value to the operating system, and why does it do so? Well, it does so to ensure that the program has executed successfully... Think of it like this, the program is executing fine, after it is done executing, it returns a standard conventional value to the operating system that suggests and means the program ran successfully without any errors, if the program did encounter any issues while executing, the value might change.",
+        "categories": [
+            "Importance",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "It's not that void main() won't work, it would work, but this is not a standard C practice, and following the convention to return the standard value is always better.",
+        "categories": [
+            "Importance",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "It's 0! If there are no errors, the program ie the main function would return the value 0 to the system, a non zero value would suggest the program ran into errors.",
+        "categories": [
+            "Fact",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Now can you rewrite the block of main function so that our program is able to return 0?",
+        "categories": [
+            "Question Ask",
+            "Topic Open"
+        ]
+    },
+    {
+        "message": "Oh sorry I forgot to tell you. You write the keyword return and after that you write the value that you wish to return. \nreturn value;\nLike this.",
+        "categories": [
+            "Short Explanation",
+            "Detailed Explanation"
+        ]
+    },
+    {
+        "message": "Very good question! You shouldn't because that would make \"0\" a string, whereas we wanna return the numerical value 0, not a string of text.",
+        "categories": [
+            "Clarification",
+            "Answer"
+        ]
+    },
+    {
+        "message": "Unfortunately your function won't be able to return 0, can you see why?",
+        "categories": [
+            "Question Ask",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "What type of data are you returning from the function?",
+        "categories": [
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "Perfect!",
+        "categories": [
+            "Answer"
+        ]
+    },
+    {
+        "message": "Nice! And what do you end at the end of each and every statement?",
+        "categories": [
+            "Question Ask"
+        ]
+    },
+    {
+        "message": "No no, that's the end of the function. The description of the function lies inside those curly braces, and you don't put a semi-colon after the function's body.",
+        "categories": [
+            "Clarification",
+            "Short Explanation"
+        ]
+    },
+    {
+        "message": "Try running it!",
+        "categories": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "Ah, sorry if I made it too long. Now basically, we know that we expect the program to print our text on the screen through the printf function, but how does the program know what to do?",
+        "categories": [
+            "Question Ask",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "What I am trying to say is even though something like printing something to the screen seems trivial to us, a computer doesn't actually know how to do that unless you describe all the complicated set of procedures and operations it will have to perform deeply inside, just to be able to print something.",
+        "categories": [
+            "Detailed Explanation",
+            "Clarification"
+        ]
+    },
+    {
+        "message": "Yes, as we talked before, every operation simplifies down to a set of something very simple and fundamental, and for now, our program does not know what exactly it should do to be able to print something on the screen. There's a lot of complexity that goes behind it, from communicating to the operating system, other processes, making buffers.",
+        "categories": [
+            "Detailed Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Oh don't lose hope! Here's the bright part now, programmers have already programmed a lot of functions for us, all pre-defined, so that we can use them as per our choice, without having to sit and redefine them.",
+        "categories": [
+            "Importance",
+            "Encouragement"
+        ]
+    },
+    {
+        "message": "Not just printf but thousands of other such functions! And this is just C, if you go for higher level languages like Python, the syntax is even simpler and there's a higher level of modularity and a lot more functions that make your task a whole lot easier!",
+        "categories": [
+            "Fact",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Oh, it's defined in a file called as stdio.h",
+        "categories": [
+            "Fact"
+        ]
+    },
+    {
+        "message": "You simply write #include <stdio.h> in the beginning of the program",
+        "categories": [
+            "Short Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Yes #include is a preprocessor directive, which means it executes before the running of the program, it includes functions from the file stdio.h that is written by programmers and contains the necessary functionality to be able to give input to and read output from a computer. It stands for standard input output. #include <stdio.h> would insert all the contents of the files stdio.h into our file, which includes functions like printf, making them ready to be used!",
+        "categories": [
+            "Detailed Explanation",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Perfect, try running it now!",
+        "categories": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "Wow that's awesome!!! I'm sorry if I stretched teaching about just printing something to the screen too long...",
+        "categories": [
+            "Connect",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Really, I am so glad you enjoyed it!",
+        "categories": [
+            "Connect",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Aww, thank you so much! I think we discussed a lot today so let's move on the next conversation to some time later... In the mean time, can you guess what would the function used for taking inputs from the user be called?",
+        "categories": [
+            "Connect",
+            "Question Ask",
+            "Topic Open"
+        ]
+    },
+    {
+        "message": "What a crazy analogy! You are right! Also the f in printf and scanf stands for format...",
+        "categories": [
+            "Answer",
+            "Fact"
+        ]
+    },
+    {
+        "message": "Yes haha, anyways I think we had a great time learning, thank you for being such a patient and enthusiastic student. We'll meet again soon.",
+        "categories": [
+            "Connect",
+            "Importance"
+        ]
+    },
+    {
+        "message": "Goodbye! Have a great time!",
+        "categories": [
+            "Connect"
+        ]
+    }
+]

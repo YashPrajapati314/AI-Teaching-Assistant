@@ -1,0 +1,2 @@
+Model Name,Temperature,Top-k,Top-p,Hamming Loss,Jaccard Index,Precision,Recall,F1-score,Exact Match
+gpt-4o-mini,0.0,,0.9,0.10847701149425287,0.425478927203065,0.6053639846743295,0.5124521072796936,0.555046669752813,0.16091954022988506
