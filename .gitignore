@@ -1,3 +1,5 @@
 .env
 
 Performance Graphs/
+
+__pycache__/
