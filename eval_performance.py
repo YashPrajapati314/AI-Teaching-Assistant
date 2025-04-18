@@ -73,4 +73,7 @@ def evaluate_model_performance(folder: Literal['./gpt-teacher-classifier/', './g
 # evaluate_model_performance(folder='./gpt-teacher-classifier/', role='Teacher', single_file='new_prompt_gpt-4o-mini_teacher_classifications--temp-0--p-0.6--k-None--.json', to_file='new-prompt-gpt-performance.csv')
 # evaluate_model_performance(folder='./gpt-teacher-classifier/', role='Teacher', single_file='new_prompt_gpt-4.1-mini_teacher_classifications--temp-1.0--p-1.0--k-None--.json', to_file='new-prompt-gpt-4.1-mini-performance.csv')
 # evaluate_model_performance(folder='./gpt-teacher-classifier/', role='Teacher', single_file='gpt-4o-mini_teacher_classifications--temp-0.0--p-0.6--k-None--.json', to_file='new-prompt-gpt-4.1-mini-performance.csv')
-evaluate_model_performance(folder='./gpt-teacher-classifier/', role='Teacher', to_file='gpt-teacher-classification-performance.csv')
+# evaluate_model_performance(folder='./gpt-teacher-classifier/', role='Teacher', to_file='gpt-teacher-classification-performance.csv')
+
+
+evaluate_model_performance(folder='./gpt-student-classifier/', role='Student', to_file='gpt-student-classification-performance.csv')

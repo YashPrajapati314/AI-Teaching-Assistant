@@ -70,7 +70,23 @@ def get_classification_vectors(predicted_classification_filename: str, role: Lit
         }
     else:
         state_positions = {
-            
+            'Topic Request': 0,
+            'Request': 1,
+            'Open Response': 2,
+            'Answer': 3,
+            'Correction': 4,
+            'Aware': 5,
+            'Unaware': 6,
+            'Unclear': 7,
+            'Misunderstood': 8,
+            'Understood': 9,
+            'Agree': 10,
+            'Disagree': 11,
+            'Ask Question': 12,
+            'Learn Emotional': 13,
+            'Pondering': 14,
+            'Connect': 15,
+            'Other': 16,
         }
 
     no_of_states = len(state_positions)
@@ -194,7 +210,23 @@ def exact_match(actual_classes_vectors: list[list[int]], predicted_classes_vecto
         }
     elif role == 'Student':
         state_positions = {
-            
+            'Topic Request': 0,
+            'Request': 1,
+            'Open Response': 2,
+            'Answer': 3,
+            'Correction': 4,
+            'Aware': 5,
+            'Unaware': 6,
+            'Unclear': 7,
+            'Misunderstood': 8,
+            'Understood': 9,
+            'Agree': 10,
+            'Disagree': 11,
+            'Ask Question': 12,
+            'Learn Emotional': 13,
+            'Pondering': 14,
+            'Connect': 15,
+            'Other': 16,
         }
         
     reversed_state_dict = {value: key for key, value in state_positions.items()}

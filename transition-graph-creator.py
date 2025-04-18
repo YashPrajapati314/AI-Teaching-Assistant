@@ -30,7 +30,23 @@ def create_transition_graph(filename: str = 'final_updated_classification.json',
         }
     elif role == 'Student':
         state_positions = {
-            
+            'Topic Request': 0,
+            'Request': 1,
+            'Open Response': 2,
+            'Answer': 3,
+            'Correction': 4,
+            'Aware': 5,
+            'Unaware': 6,
+            'Unclear': 7,
+            'Misunderstood': 8,
+            'Understood': 9,
+            'Agree': 10,
+            'Disagree': 11,
+            'Ask Question': 12,
+            'Learn Emotional': 13,
+            'Pondering': 14,
+            'Connect': 15,
+            'Other': 16,
         }
     elif role == 'Both':
         state_positions = {

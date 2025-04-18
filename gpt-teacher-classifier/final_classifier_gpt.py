@@ -35,7 +35,7 @@ def create_model(temperature = None, top_p = None, model_name = Literal['gpt-4o-
     - Other: The message doesn't categorize into any of the other mentioned classes or contain a significant element that doesn't classify into any other states.
 
     Provide a structured output as a JSON list where each element is an object with:
-    - "message": The original message
+    - "message": The teacher's message
     - "categories": A list of the relevant categories the message classifies into.
 
     The user sends pairs of student teacher messages formatted like this:-

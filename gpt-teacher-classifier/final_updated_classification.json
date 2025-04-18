@@ -18,7 +18,7 @@
         "message": "Okay so I am soon going to enter college, and I am going to be learning computer science... I am very excited to begin this journey, and I wish to start learning C programming. Can you please help me out with it? Learning C in a very elegant way, that no one has ever done before?",
         "responder": "Student",
         "states": [
-            "Request",
+            "Topic Request",
             "Connect"
         ]
     },
@@ -37,7 +37,7 @@
         "states": [
             "Open Response",
             "Unaware",
-            "Request"
+            "Topic Request"
         ]
     },
     {
@@ -76,7 +76,7 @@
         "message": "You're on the right path! But if you think about it closely, computers are nothing more than a bunch of circuits and logic gates.",
         "responder": "Teacher",
         "states": [
-            "Short Explanation",
+            "Answer Respond",
             "Clarification"
         ]
     },
@@ -144,7 +144,6 @@
         "responder": "Teacher",
         "states": [
             "Clarification",
-            "Example",
             "Question Ask"
         ]
     },
@@ -159,6 +158,7 @@
         "message": "Exactly! As a logical operator, AND tries to mean that both the statements are true, now suppose I tell you \"I am eating an ice-cream and am happy\", but the actual truth is although I am eating an ice cream, I am sad, is my original statement true?",
         "responder": "Teacher",
         "states": [
+            "Answer Respond",
             "Short Explanation",
             "Example",
             "Question Ask"
@@ -177,7 +177,8 @@
         "responder": "Teacher",
         "states": [
             "Clarification",
-            "Answer Respond"
+            "Answer Respond",
+            "Question Ask"
         ]
     },
     {
@@ -208,8 +209,7 @@
         "responder": "Teacher",
         "states": [
             "Answer Respond",
-            "Short Explanation",
-            "Example"
+            "Short Explanation"
         ]
     },
     {
@@ -223,9 +223,7 @@
         "message": "Okay think of the AND example, if we said 'p and q' is true, both p and q had to be true individually.",
         "responder": "Teacher",
         "states": [
-            "Answer Respond",
-            "Clarification",
-            "Example"
+            "Clarification"
         ]
     },
     {
@@ -239,8 +237,7 @@
         "message": "Similarly, in the case of OR, if you say 'p or q' is true, then in this case, it is not necessary for both p and q to be true. Even if only p is true, the entire statement 'p or q' will be true.",
         "responder": "Teacher",
         "states": [
-            "Detailed Explanation",
-            "Fact"
+            "Detailed Explanation"
         ]
     },
     {
@@ -278,7 +275,8 @@
         "responder": "Student",
         "states": [
             "Learn Emotional",
-            "Ask Question"
+            "Ask Question",
+            "Pondering"
         ]
     },
     {
@@ -318,15 +316,16 @@
         "responder": "Teacher",
         "states": [
             "Detailed Explanation",
-            "Example",
-            "Question Ask"
+            "Question Ask",
+            "Importance"
         ]
     },
     {
         "message": "I think it will be low because logically, AND only gives true or high when both of its inputs are high. Here one of them is low, so it gives a low signal as the output.",
         "responder": "Student",
         "states": [
-            "Answer"
+            "Answer",
+            "Pondering"
         ]
     },
     {
@@ -350,7 +349,8 @@
         "responder": "Teacher",
         "states": [
             "Clarification",
-            "Short Explanation"
+            "Short Explanation",
+            "Importance"
         ]
     },
     {
@@ -400,10 +400,11 @@
         ]
     },
     {
-        "message": "Input devices, Output devices, getting some hints?",
+        "message": "Input devices, Output devices, getting some hints...",
         "responder": "Student",
         "states": [
-            "Answer"
+            "Answer",
+            "Pondering"
         ]
     },
     {
@@ -455,7 +456,8 @@
         "message": "No haha, it doesn't stand for anything. It was named C as it was introduced as an improvement to the B programming language.",
         "responder": "Teacher",
         "states": [
-            "Answer Respond"
+            "Answer Respond",
+            "Fact"
         ]
     },
     {
@@ -470,7 +472,8 @@
         "message": "No, the B there stands for Basic.",
         "responder": "Teacher",
         "states": [
-            "Answer"
+            "Answer",
+            "Fact"
         ]
     },
     {
@@ -720,7 +723,6 @@
         "message": "Yes, right again! So you see I have been talking about functions for so long, what exactly are they? Well they are pieces of instructions that do something for us. Just like the printf function takes in a string and prints it to the console for us. Now just like how in math, a function takes in a value (or maybe multiple) and gives out some other value, the same way a function takes in some parameters in its parentheses, and gives out a value through a return statement. For example, if there was a function to add two numbers, it would take in two numbers as the input, say a and b, and return an output, a+b. Do you know what integers are?",
         "responder": "Teacher",
         "states": [
-            "Answer Respond",
             "Detailed Explanation",
             "Open Ask",
             "Question Ask"
@@ -840,7 +842,8 @@
         "responder": "Student",
         "states": [
             "Open Response",
-            "Ask Question"
+            "Ask Question",
+            "Pondering"
         ]
     },
     {
@@ -863,7 +866,7 @@
         "message": "Oh, we use the void data type! You know what a void is in space?",
         "responder": "Teacher",
         "states": [
-            "Answer Respond",
+            "Answer",
             "Question Ask"
         ]
     },
@@ -906,7 +909,7 @@
         "message": "So can you help me and rewrite the entire thing with the change we made",
         "responder": "Teacher",
         "states": [
-            "Other"
+            "Question Ask"
         ]
     },
     {
@@ -935,7 +938,8 @@
         "message": "The main function returns its value to the operating system, and why does it do so? Well, it does so to ensure that the program has executed successfully... Think of it like this, the program is executing fine, after it is done executing, it returns a standard conventional value to the operating system that suggests and means the program ran successfully without any errors, if the program did encounter any issues while executing, the value might change.",
         "responder": "Teacher",
         "states": [
-            "Detailed Explanation"
+            "Detailed Explanation",
+            "Importance"
         ]
     },
     {
@@ -977,7 +981,7 @@
         "message": "Now can you rewrite the block of main function so that our program is able to return 0?",
         "responder": "Teacher",
         "states": [
-            "Other"
+            "Question Ask"
         ]
     },
     {
@@ -992,7 +996,8 @@
         "responder": "Teacher",
         "states": [
             "Connect",
-            "Clarification"
+            "Clarification",
+            "Short Explanation"
         ]
     },
     {
@@ -1006,7 +1011,8 @@
         "message": "Very good question! You shouldn't because that would make \"0\" a string, whereas we wanna return the numerical value 0, not a string of text.",
         "responder": "Teacher",
         "states": [
-            "Answer"
+            "Answer",
+            "Clarification"
         ]
     },
     {
@@ -1029,7 +1035,8 @@
         "responder": "Student",
         "states": [
             "Answer",
-            "Ask Question"
+            "Ask Question",
+            "Pondering"
         ]
     },
     {
@@ -1052,7 +1059,8 @@
         "message": "Perfect!",
         "responder": "Teacher",
         "states": [
-            "Connect"
+            "Connect",
+            "Answer Respond"
         ]
     },
     {
@@ -1082,7 +1090,8 @@
         "message": "No no, that's the end of the function. The description of the function lies inside those curly braces, and you don't put a semi-colon after the function's body.",
         "responder": "Teacher",
         "states": [
-            "Answer"
+            "Answer",
+            "Clarification"
         ]
     },
     {
@@ -1128,7 +1137,8 @@
         "responder": "Teacher",
         "states": [
             "Answer",
-            "Short Explanation"
+            "Short Explanation",
+            "Clarification"
         ]
     },
     {
@@ -1142,7 +1152,8 @@
         "message": "Yes, as we talked before, every operation simplifies down to a set of something very simple and fundamental, and for now, our program does not know what exactly it should do to be able to print something on the screen. There's a lot of complexity that goes behind it, from communicating to the operating system, other processes, making buffers.",
         "responder": "Teacher",
         "states": [
-            "Short Explanation"        ]
+            "Short Explanation"
+	]
     },
     {
         "message": "Wow, that's interesting, but this looks really complicated... I don't think programming is for me, I don't think I will be able to describe functions so precisely from scratch, dealing with 1s and 0s. I'm sorry you teach really well, but it's too difficult for me I guess.",
@@ -1174,7 +1185,7 @@
         "responder": "Teacher",
         "states": [
             "Answer",
-            "Fact"
+            "Short Explanation"
         ]
     },
     {
@@ -1219,7 +1230,8 @@
         "responder": "Teacher",
         "states": [
             "Answer",
-            "Detailed Explanation"
+            "Detailed Explanation",
+            "Importance"
         ]
     },
     {
@@ -1247,15 +1259,13 @@
         "message": "Wow that's awesome!!! I'm sorry if I stretched teaching about just printing something to the screen too long...",
         "responder": "Teacher",
         "states": [
-            "Connect",
-            "Other"
+            "Connect"
         ]
     },
     {
         "message": "No, I really loved your style of teaching, it made me explore things myself and was so much more enjoyable rather than a tutorial that would paste the standard Hello World program in front of me and simply ask me to run it first.",
         "responder": "Student",
         "states": [
-            "Other",
             "Connect",
             "Learn Emotional",
             "Understood"
@@ -1289,7 +1299,6 @@
         "responder": "Student",
         "states": [
             "Answer",
-            "Other",
             "Ask Question"
         ]
     },
@@ -1313,23 +1322,20 @@
         "message": "Yes haha, anyways I think we had a great time learning, thank you for being such a patient and enthusiastic student. We'll meet again soon.",
         "responder": "Teacher",
         "states": [
-            "Connect",
-            "Other"
+            "Connect"
         ]
     },
     {
         "message": "Thank you and see you soon! Have a nice day!",
         "responder": "Student",
         "states": [
-            "Connect",
-            "Other"
+            "Connect"
         ]
     },
     {
         "message": "Goodbye! Have a great time!",
         "responder": "Teacher",
         "states": [
-            "Other",
             "Connect"
         ]
     }

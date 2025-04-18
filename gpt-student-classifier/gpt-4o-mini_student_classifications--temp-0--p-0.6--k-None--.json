@@ -1,0 +1,602 @@
+[
+    {
+        "message": "Hello teacher",
+        "categories": [
+            "Connect"
+        ]
+    },
+    {
+        "message": "Okay so I am soon going to enter college, and I am going to be learning computer science... I am very excited to begin this journey, and I wish to start learning C programming. Can you please help me out with it? Learning C in a very elegant way, that no one has ever done before?",
+        "categories": [
+            "Topic Request",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "I have no clue about programming, can you please walk me through in a way that's very intuitive and like an amazing enjoyable journey of exploration instead of a boring lecture.",
+        "categories": [
+            "Unaware",
+            "Request",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Wow, is that so?",
+        "categories": [
+            "Answer",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "A programming language...? Like C?",
+        "categories": [
+            "Answer",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh! I remember learning something about gates, but I didn't exactly understand it and thus don't remember what exactly do they mean. I'm sorry.",
+        "categories": [
+            "Unclear",
+            "Aware"
+        ]
+    },
+    {
+        "message": "Oh yes! I remember learning about them in physics class, they are made of semiconductors which allow the current to flow in only a particular direction.",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Yes...",
+        "categories": [
+            "Agree",
+            "Understood"
+        ]
+    },
+    {
+        "message": "I didn't quite get you. And is simply used to join the two clauses here, to combine the two statements into one.",
+        "categories": [
+            "Unclear",
+            "Answer"
+        ]
+    },
+    {
+        "message": "No, it means both the statements are true.",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "It's partially true.",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "No",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "That means you would either like to have tea or coffee. Right?",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "What? That doesn't make sense to me...",
+        "categories": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Yes, that's right.",
+        "categories": [
+            "Agree",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Ohh, so only one of them needs to be true...",
+        "categories": [
+            "Understood",
+            "Answer"
+        ]
+    },
+    {
+        "message": "Oh, I get it now. But what if we want a condition that only one of them can be true, only then the conjunction of the statements will evaluate to true?",
+        "categories": [
+            "Ask Question",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh that's interesting! So what are the fundamental logical conditions? AND and OR, that's all?",
+        "categories": [
+            "Ask Question",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "It simply negates the meaning of the original statement?",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh yeah! This is binary, the language of computers!",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "I think it will be low because logically, AND only gives true or high when both of its inputs are high. Here one of them is low, so it gives a low signal as the output.",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Yeah that's right, it wouldn't be possible at all probably keeping in track what every combination means, and how to manually convey it to the hardware.",
+        "categories": [
+            "Agree",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Ohhhh, that's so interesting!",
+        "categories": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "It does! I am so excited to learn it!",
+        "categories": [
+            "Agree",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "I am not sure.",
+        "categories": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Input devices, Output devices, getting some hints...",
+        "categories": [
+            "Aware",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "Uhm... Write?",
+        "categories": [
+            "Answer",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh I see.",
+        "categories": [
+            "Understood",
+            "Aware"
+        ]
+    },
+    {
+        "message": "Computer?",
+        "categories": [
+            "Answer",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Wow, that's an interesting fact, now did the B programming language originate from the A programming language?",
+        "categories": [
+            "Ask Question",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "LOL, that was unexpected.",
+        "categories": [
+            "Learn Emotional",
+            "Agree"
+        ]
+    },
+    {
+        "message": "Yes, I agree, and probably the syntax or rules are even stricter here because a computer needs a very specific structure of instructions to understand us.",
+        "categories": [
+            "Agree",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh okay, yes, next?",
+        "categories": [
+            "Request",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh, um, I can't think of anything... Okay let's just print \"Hiii\".",
+        "categories": [
+            "Open Response",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "Oh, ok.",
+        "categories": [
+            "Understood",
+            "Aware"
+        ]
+    },
+    {
+        "message": "Oh I see...",
+        "categories": [
+            "Understood",
+            "Aware"
+        ]
+    },
+    {
+        "message": "Oh, that looks kinda weird.",
+        "categories": [
+            "Pondering",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh that makes sense, it also kinda gives a programmatic feel to what we are writing.",
+        "categories": [
+            "Agree",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh, it does not run, and shows some sort of errors.",
+        "categories": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh, how do we tell it then?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Yes, what's that?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh I see, so how exactly do we write this main function?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Nothing goes inside these parentheses?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh, like this? main(){}",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh, so I think I should write main(){printf(\"Hiii!\");}? This looks so messy.",
+        "categories": [
+            "Answer",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "Oh, looks much better, now let me try to run this.",
+        "categories": [
+            "Open Response",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh, it's still not running, shows errors again.",
+        "categories": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Yes, whole numbers? Also the negative ones, non fractional?",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Umm, I am confused, like I understood most of the part but I don't get the returning part.",
+        "categories": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "The number 8",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "It's a number.",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "integer add()?",
+        "categories": [
+            "Answer",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh int add()",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh it doesn't have a return type!",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "I don't know, who will it return the value to?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Thank you haha, it was a question that genuinely came to my mind. So what do we do now that we don't want it to return a value.",
+        "categories": [
+            "Ask Question",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "A vast region of emptiness?",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh",
+        "categories": [
+            "Understood",
+            "Aware"
+        ]
+    },
+    {
+        "message": "Oh that's great!",
+        "categories": [
+            "Agree",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Okay so it should be something like this\nvoid main()\n{\n\tprintf(\"Hiii!\");\n}",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh is that so, but why? And where does it go?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh",
+        "categories": [
+            "Understood",
+            "Aware"
+        ]
+    },
+    {
+        "message": "Oh. So what is this standard value?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh I see",
+        "categories": [
+            "Understood",
+            "Aware"
+        ]
+    },
+    {
+        "message": "I don't know how to return values though",
+        "categories": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Okay, do I need to enclose the 0 in quotation marks?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "void main()\n{\n\tprintf(\"Hiii!\");\n\treturn 0\n}",
+        "categories": [
+            "Answer",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Why?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh it says void, I need to change it to int",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "int main()\n{\n\tprintf(\"Hiii!\");\n\treturn 0\n}",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Do we need to add a semi-colon at the end too, after the curly bracket closes?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Okay, so now I guess this should run...",
+        "categories": [
+            "Open Response",
+            "Understood"
+        ]
+    },
+    {
+        "message": "Oh, it still doesn't work, it says something like printf is undefined... Idk what this means we have tried and fixed everything, why is this still not working?",
+        "categories": [
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Oh, what does that mean?",
+        "categories": [
+            "Unclear",
+            "Ask Question"
+        ]
+    },
+    {
+        "message": "What? Is that so?",
+        "categories": [
+            "Unclear",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "Wow, that's interesting, but this looks really complicated... I don't think programming is for me, I don't think I will be able to describe functions so precisely from scratch, dealing with 1s and 0s. I'm sorry you teach really well, but it's too difficult for me I guess.",
+        "categories": [
+            "Learn Emotional",
+            "Disagree"
+        ]
+    },
+    {
+        "message": "Oh, so there is one for printf function?",
+        "categories": [
+            "Ask Question",
+            "Aware"
+        ]
+    },
+    {
+        "message": "That sounds so much fun! So where exactly is this printf function defined?",
+        "categories": [
+            "Ask Question",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "Oh, how do we access it and connect it to our printf function and make our program work?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "Outside the main function?",
+        "categories": [
+            "Ask Question",
+            "Unclear"
+        ]
+    },
+    {
+        "message": "#include <stdio.h>\nint main()\n{\n\tprintf(\"Hiii!\");\n\treturn 0;\n}",
+        "categories": [
+            "Answer",
+            "Understood"
+        ]
+    },
+    {
+        "message": "It works! I can see Hiii written on the output screen! Wow this is amazing!!!",
+        "categories": [
+            "Open Response",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "No, I really loved your style of teaching, it made me explore things myself and was so much more enjoyable rather than a tutorial that would paste the standard Hello World program in front of me and simply ask me to run it first.",
+        "categories": [
+            "Agree",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "It was so much fun, you are such a great teacher!",
+        "categories": [
+            "Agree",
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Yes you are right. Oh and I would have guessed the function's name to be read, but now that there's the o/p function named printf, let me think... So a printer is used for o/p, and it's analogous device used for i/p is a scanner, so is the input function named scanf by any chance?",
+        "categories": [
+            "Answer",
+            "Pondering"
+        ]
+    },
+    {
+        "message": "Wow, that was unexpected!",
+        "categories": [
+            "Learn Emotional"
+        ]
+    },
+    {
+        "message": "Thank you and see you soon! Have a nice day!",
+        "categories": [
+            "Connect",
+            "Learn Emotional"
+        ]
+    }
+]
