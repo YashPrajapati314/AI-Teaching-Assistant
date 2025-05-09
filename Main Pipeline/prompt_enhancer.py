@@ -131,43 +131,38 @@ def get_next_possible_teacher_states(prev_teacher_states: list[str] = [], studen
         input_tensor = torch.tensor(input_vector, dtype=torch.float32).unsqueeze(0)  # shape: (1, input_size)
         prediction = model(input_tensor)[0].numpy()
 
-    # Convert index back to state names
     index_to_state = {v: k for k, v in teacher_states_order.items()}
 
-    # If prediction is a single label
-    # return [index_to_state[prediction]]
-
-    # If multilabel output (like sigmoid vector)
     return [index_to_state[i] for i, val in enumerate(prediction) if val > 0.5]
     
     
-    next_possible_teacher_states = []
-    if 'Topic Request' in student_states:
-        next_possible_teacher_states.extend(['Topic Ask'])
-    if 'Topic Ask' in prev_teacher_states:
-        next_possible_teacher_states.extend(['Topic Open', 'Importance', 'Fact'])
-    if 'Short Explanation' in prev_teacher_states:
-        next_possible_teacher_states.extend(['Short Explanation'])
-        if random.random() < 0.4:
-            next_possible_teacher_states.extend(['Example'])
-        if random.random() < 0.3:
-            next_possible_teacher_states.extend(['Question Ask'])
-        if random.random() < 0.2:
-            next_possible_teacher_states.extend(['Detailed Explanation'])
-        if random.random() < 0.1:
-            next_possible_teacher_states.extend(['Fact'])
-        if random.random() < 0.1:
-            next_possible_teacher_states.extend(['Importance'])
-    if 'Ask Question' in student_states:
-        next_possible_teacher_states.extend(['Answer'])
-        if random.random() < 0.6:
-            next_possible_teacher_states.extend(['Question Ask'])
-    if 'Unclear' in student_states or 'Misunderstood' in student_states:
-        next_possible_teacher_states.extend(['Clarification'])
-    if 'Answer' in student_states:
-        next_possible_teacher_states.extend(['Answer Respond'])
+    # next_possible_teacher_states = []
+    # if 'Topic Request' in student_states:
+    #     next_possible_teacher_states.extend(['Topic Ask'])
+    # if 'Topic Ask' in prev_teacher_states:
+    #     next_possible_teacher_states.extend(['Topic Open', 'Importance', 'Fact'])
+    # if 'Short Explanation' in prev_teacher_states:
+    #     next_possible_teacher_states.extend(['Short Explanation'])
+    #     if random.random() < 0.4:
+    #         next_possible_teacher_states.extend(['Example'])
+    #     if random.random() < 0.3:
+    #         next_possible_teacher_states.extend(['Question Ask'])
+    #     if random.random() < 0.2:
+    #         next_possible_teacher_states.extend(['Detailed Explanation'])
+    #     if random.random() < 0.1:
+    #         next_possible_teacher_states.extend(['Fact'])
+    #     if random.random() < 0.1:
+    #         next_possible_teacher_states.extend(['Importance'])
+    # if 'Ask Question' in student_states:
+    #     next_possible_teacher_states.extend(['Answer'])
+    #     if random.random() < 0.6:
+    #         next_possible_teacher_states.extend(['Question Ask'])
+    # if 'Unclear' in student_states or 'Misunderstood' in student_states:
+    #     next_possible_teacher_states.extend(['Clarification'])
+    # if 'Answer' in student_states:
+    #     next_possible_teacher_states.extend(['Answer Respond'])
         
-    return next_possible_teacher_states
+    # return next_possible_teacher_states
         
 
 def get_prompt_for_next_teacher_states(prev_teacher_states: list[str] = [], student_states: list[str] = []) -> str:
