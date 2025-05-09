@@ -16,7 +16,7 @@ def create_model(temperature = None, top_p = None, model_name = Literal['gpt-4o-
     
     # old system prompt
     system_prompt = """
-    You are an expert AI that classifies a teacher's messages into one or more of the following predefined categories. 
+    You are an expert model that classifies a teacher's messages into one or more of the following predefined categories. 
     - Topic Open: The teacher begins talking about a new major topic.
     - Topic Ask: The teacher asks the student what they would like to learn about, or how much detail would they like to learn it in, or in what manner exactly.
     - Importance: The teacher highlights the importance of the topic in question and makes it seem fundamental and important to understand with reasons.

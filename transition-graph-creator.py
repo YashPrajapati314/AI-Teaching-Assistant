@@ -46,11 +46,43 @@ def create_transition_graph(filename: str = 'final_updated_classification.json',
             'Learn Emotional': 13,
             'Pondering': 14,
             'Connect': 15,
-            'Other': 16,
+            'Other': 16
         }
     elif role == 'Both':
         state_positions = {
-            
+            'Teacher Topic Open': 0,
+            'Teacher Topic Ask': 1,
+            'Teacher Importance': 2,
+            'Teacher Short Explanation': 3,
+            'Teacher Detailed Explanation': 4,
+            'Teacher Fact': 5,
+            'Teacher Example': 6,
+            'Teacher Story': 7,
+            'Teacher Clarification': 8,
+            'Teacher Answer': 9,
+            'Teacher Open Ask': 10,
+            'Teacher Question Ask': 11,
+            'Teacher Answer Respond': 12,
+            'Teacher Connect': 13,
+            'Teacher Branch': 14,
+            'Teacher Other': 15,
+            'Student Topic Request': 16,
+            'Student Request': 17,
+            'Student Open Response': 18,
+            'Student Answer': 19,
+            'Student Correction': 20,
+            'Student Aware': 21,
+            'Student Unaware': 22,
+            'Student Unclear': 23,
+            'Student Misunderstood': 24,
+            'Student Understood': 25,
+            'Student Agree': 26,
+            'Student Disagree': 27,
+            'Student Ask Question': 28,
+            'Student Learn Emotional': 29,
+            'Student Pondering': 30,
+            'Student Connect': 31,
+            'Student Other': 32
         }
 
     reversed_state_positions = {value: key for key, value in state_positions.items()}
@@ -62,7 +94,7 @@ def create_transition_graph(filename: str = 'final_updated_classification.json',
     for obj in data:
         if obj:
             if role == 'Both':
-                message_states = [state_positions[state] for state in obj['states']]
+                message_states = [state_positions[obj['responder'] + ' ' + state] for state in obj['states']]
                 messages.append(message_states)
             elif obj['responder'] == role:
                 message_states = [state_positions[state] for state in obj['states']]
@@ -115,9 +147,11 @@ def create_table(role: Literal['Student', 'Teacher', 'Both'] = 'Both'):
     print(df)
     
     if role == 'Both':
-        df.to_csv(f'Student Teacher State Transition', index=False)
+        df.to_csv(f'Student Teacher State Transition.csv', index=False)
     else:
         df.to_csv(f'{role} State Transition.csv', index=False)
     
-create_table('Teacher')
+# create_table('Teacher')
+# create_table('Student')
+create_table('Both')
 

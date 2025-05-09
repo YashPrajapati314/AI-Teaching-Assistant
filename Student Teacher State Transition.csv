@@ -1,0 +1,34 @@
+Previous State,Teacher Topic Open,Teacher Topic Ask,Teacher Importance,Teacher Short Explanation,Teacher Detailed Explanation,Teacher Fact,Teacher Example,Teacher Story,Teacher Clarification,Teacher Answer,Teacher Open Ask,Teacher Question Ask,Teacher Answer Respond,Teacher Connect,Teacher Branch,Teacher Other,Student Topic Request,Student Request,Student Open Response,Student Answer,Student Correction,Student Aware,Student Unaware,Student Unclear,Student Misunderstood,Student Understood,Student Agree,Student Disagree,Student Ask Question,Student Learn Emotional,Student Pondering,Student Connect,Student Other
+Teacher Topic Open,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0
+Teacher Topic Ask,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,0
+Teacher Importance,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3,1,0,0,4,1,0,0
+Teacher Short Explanation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,6,0,0,0,2,2,4,3,0,7,9,1,1,4
+Teacher Detailed Explanation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,1,0,5,0,0,3,1,1,0,1
+Teacher Fact,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,4,0,0,0
+Teacher Example,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,1,2,1,0,0,1,1,0,0,1
+Teacher Story,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Teacher Clarification,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,1,1,0,2,1,0,6,2,1,1,0
+Teacher Answer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,2,0,0,8,5,1,0,0
+Teacher Open Ask,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,5,3,0,0,2,0,0,0,0,0,2,0,1,0,0
+Teacher Question Ask,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,19,0,0,1,2,2,2,1,0,2,1,3,0,0
+Teacher Answer Respond,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,1,1,1,1,5,1,0,3,3,1,1,1
+Teacher Connect,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,3,0,1,1,1,0,1,0,0,5,3,0,4,0
+Teacher Branch,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Teacher Other,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2,2,0,0,2
+Student Topic Request,1,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Request,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Open Response,1,0,1,1,2,1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Answer,0,0,1,11,2,2,2,0,4,1,2,12,16,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Correction,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Aware,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Unaware,1,1,1,1,0,1,0,0,2,0,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Unclear,0,0,0,1,0,0,1,0,4,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Misunderstood,0,0,0,0,0,0,0,0,2,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Understood,0,0,2,6,3,1,3,0,3,0,1,4,1,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Agree,1,0,1,1,2,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Disagree,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Ask Question,0,0,2,5,4,2,0,0,4,16,1,3,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Learn Emotional,1,0,4,6,2,1,0,0,2,4,2,4,2,5,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Pondering,0,0,0,2,0,0,0,0,0,2,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Connect,0,3,0,1,0,0,0,0,0,0,2,0,1,7,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Student Other,0,0,0,1,2,0,0,0,3,0,1,1,1,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

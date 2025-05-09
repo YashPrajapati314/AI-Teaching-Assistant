@@ -32,7 +32,7 @@ Provide a structured output as a JSON list where each element is an object with:
 - "categories": A list of the relevant categories the message classifies into.
 
 The user sends pairs of teacher student messages formatted like this:-
-Teacher: Can you think of why happens?
+Teacher: Can you think of why this happens?
 Student: Is it because of the moving charges?
 
 Important things to consider:
